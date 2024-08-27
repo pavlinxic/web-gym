@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="our.css">
+    <link rel="stylesheet" href="preloader.css">
+    <script src="main.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="gsap.js" defer></script>
+    <!-- Link Swiper's CSS -->
+    <title></title>
+</head>
+
+<body data-barba="wrapper">
+
+    <div class="wrapper">
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        <!-- Change your profile picture -->
+                        <img src="" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting"></span>
+                    <h1 class="nav__name"> <br> </h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link ">
+                            <i class='bx bx-home'></i> Клуб
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="price.html" class="nav__link ">
+                            <i class='bx bx-user'></i> Карты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="direction.html" class="nav__link">
+                            <i class='bx bx-directions'></i> Расписание
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="workout.html" class="nav__link active-link">
+                            <i class='bx bx-dumbbell'></i> Направления
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="couch.html" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i> Тренеры
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="foto.html" class="nav__link">
+                            <i class='bx bx-bookmark'></i> Фото клуба
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i> Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <!--=============== MAIN ===============-->
+        <main class="main inner" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        PRO-GYM
+                    </a>
+
+                    <!-- Toggle button -->
+                    <div class="header__toggle" id="header-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </nav>
+            </header>
+
+            <section>
+                <div id="preloader">
+                    <div id="ctn-preloader" class="ctn-preloader">
+                        <div class="animation-preloader">
+                            <div class="spinner"></div>
+                            <div class="txt-loading">
+                                <span data-text-preloader="L" class="letters-loading">
+                                    L
+                                </span>
+        
+                                <span data-text-preloader="O" class="letters-loading">
+                                    O
+                                </span>
+        
+                                <span data-text-preloader="A" class="letters-loading">
+                                    A
+                                </span>
+        
+                                <span data-text-preloader="D" class="letters-loading">
+                                    D
+                                </span>
+        
+                                <span data-text-preloader="I" class="letters-loading">
+                                    I
+                                </span>
+        
+                                <span data-text-preloader="N" class="letters-loading">
+                                    N
+                                </span>
+        
+                                <span data-text-preloader="G" class="letters-loading">
+                                    G
+                                </span>
+                            </div>
+                        </div>
+                        <div class="loader-section section-left"></div>
+                        <div class="loader-section section-right"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- When inserting y   our content into sections, remove the section__height class -->
+            <!--=============== HOME ===============-->
+            <section class="section section__height container" data-barba="container" data-barba-namespace="work"
+                id="home">
+                <div class="body-workout">
+
+                
+                <div class="swiper swiper-workout mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide card__article">
+                            <div class="img img-1"></div>
+                            <div class="name">Abolfazl Najafi</div>
+                            <div class="title">Full Stack Web Developer</div>
+                            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.</div>
+                            <a class="link " href="#">Read Full Story &#8594</a>
+
+                            <div class="card__data">
+                                <!-- <i class="ri-close-line" ></i> -->
+                                <span class="card__description">Vancouver Mountains, Canada</span>
+                                <h2 class="card__title">The Great Path</h2>
+                                <a href="#" class="card__button">Read More</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card__article">
+                            <div class="img img-1"></div>
+                            <div class="name">Abolfazl Najafi</div>
+                            <div class="title">Full Stack Web Developer</div>
+                            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.</div>
+                            <a class="link " href="#">Read Full Story &#8594</a>
+
+                            <div class="card__data">
+                                <!-- <i class="ri-close-line" ></i> -->
+                                <span class="card__description">Vancouver Mountains, Canada</span>
+                                <h2 class="card__title">The Great Path</h2>
+                                <a href="#" class="card__button">Read More</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card__article">
+                            <div class="img img-1"></div>
+                            <div class="name">Abolfazl Najafi</div>
+                            <div class="title">Full Stack Web Developer</div>
+                            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.</div>
+                            <a class="link " href="#">Read Full Story &#8594</a>
+
+                            <div class="card__data">
+                                <!-- <i class="ri-close-line" ></i> -->
+                                <span class="card__description">Vancouver Mountains, Canada</span>
+                                <h2 class="card__title">The Great Path</h2>
+                                <a href="#" class="card__button">Read More</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card__article">
+                            <div class="img img-1"></div>
+                            <div class="name">Abolfazl Najafi</div>
+                            <div class="title">Full Stack Web Developer</div>
+                            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.</div>
+                            <a class="link " href="#">Read Full Story &#8594</a>
+
+                            <div class="card__data">
+                                <!-- <i class="ri-close-line" ></i> -->
+                                <span class="card__description">Vancouver Mountains, Canada</span>
+                                <h2 class="card__title">The Great Path</h2>
+                                <a href="#" class="card__button">Read More</a>
+                            </div>
+                        </div>
+                        <div class="swiper-slide card__article">
+                            <div class="img img-1"></div>
+                            <div class="name">Abolfazl Najafi</div>
+                            <div class="title">Full Stack Web Developer</div>
+                            <div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Duis aute
+                                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.</div>
+                            <a class="link " href="#">Read Full Story &#8594</a>
+
+                            <div class="card__data">
+                                <!-- <i class="ri-close-line" ></i> -->
+                                <span class="card__description">Vancouver Mountains, Canada</span>
+                                <h2 class="card__title">The Great Path</h2>
+                                <a href="#" class="card__button">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            </section>
+
+
+        </main>
+    </div>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="barba.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "cards",
+            grabCursor: true,
+
+            loop: true,
+            autoplay: {
+                delay: 19500,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+    <script>
+        const cardArt = document.querySelectorAll(".card__article");
+        const link = document.querySelectorAll(".link");
+        const close = document.querySelectorAll(".ri-close-line");
+        cardArt.forEach((art, index) => {
+            art.addEventListener("click", () => {
+                if (!art.classList.contains("active")) {
+                    cardArt[index].classList.add("active");
+                }
+            });
+            art.addEventListener("mouseleave", () => {
+                if (art.classList.contains("active")) {
+                    cardArt[index].classList.remove("active");
+                }
+            });
+
+        });
+    </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+        
+                    setTimeout(function () {
+                        $('#ctn-preloader').addClass('loaded');
+                        // Una vez haya terminado el preloader aparezca el scroll
+                        $('body').removeClass('no-scroll-y');
+        
+                        if ($('#ctn-preloader').hasClass('loaded')) {
+                            // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+                            $('#preloader').delay(1000).queue(function () {
+                                $(this).remove();
+                            });
+                        }
+                    }, 3000);
+        
+                });
+            </script>
+</body>
+
+</html>

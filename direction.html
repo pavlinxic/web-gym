@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="our.css">
+    <link rel="stylesheet" href="preloader.css">
+    <script src="main.js" defer></script>
+    <script src="gsap.js" defer></script>
+
+    <title>Responsive menu ui - Bedimcode</title>
+</head>
+
+<body data-barba="wrapper">
+
+    <div class="wrapper">
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        <!-- Change your profile picture -->
+                        <img src="" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting"></span>
+                    <h2 class="nav__name"></h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link ">
+                            <i class='bx bx-home'></i> Клуб
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="price.html" class="nav__link ">
+                            <i class='bx bx-user'></i> Карты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="direction.html" class="nav__link active-link">
+                            <i class='bx bx-directions'></i> Расписание
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="workout.html" class="nav__link">
+                            <i class='bx bx-dumbbell'></i> Направления
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="couch.html" class="nav__link">
+                            <i class='bx bx-briefcase-alt-2'></i> Тренеры
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="foto.html" class="nav__link">
+                            <i class='bx bx-bookmark'></i> Фото клуба
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i> Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <!--=============== MAIN ===============-->
+        <main class="main  inner" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        PRO-GYM
+                    </a>
+
+                    <!-- Toggle button -->
+                    <div class="header__toggle" id="header-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <div id="preloader">
+                    <div id="ctn-preloader" class="ctn-preloader">
+                        <div class="animation-preloader">
+                            <div class="spinner"></div>
+                            <div class="txt-loading">
+                                <span data-text-preloader="L" class="letters-loading">
+                                    L
+                                </span>
+        
+                                <span data-text-preloader="O" class="letters-loading">
+                                    O
+                                </span>
+        
+                                <span data-text-preloader="A" class="letters-loading">
+                                    A
+                                </span>
+        
+                                <span data-text-preloader="D" class="letters-loading">
+                                    D
+                                </span>
+        
+                                <span data-text-preloader="I" class="letters-loading">
+                                    I
+                                </span>
+        
+                                <span data-text-preloader="N" class="letters-loading">
+                                    N
+                                </span>
+        
+                                <span data-text-preloader="G" class="letters-loading">
+                                    G
+                                </span>
+                            </div>
+                        </div>
+                        <div class="loader-section section-left"></div>
+                        <div class="loader-section section-right"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- When inserting your content into sections, remove the section__height class -->
+            <!--=============== HOME ===============-->
+            <section class="section  container" data-barba="container" data-barba-namespace="direction"
+                id="home">
+                <div class="body-direction">
+
+                
+                <svg display="none">
+                    <symbol id="arrow">
+                        <polyline points="7 10,12 15,17 10" fill="none" stroke="currentcolor" stroke-linecap="round"
+                            stroke-linejoin="round" stroke-width="2" />
+                    </symbol>
+                </svg>
+                <h1 class="direction-anim">A Brief History of Unix Time</h1>
+                <div id="timeline" class="timeline">
+                    <div class="btn-group-dir">
+                        <button class="btn-dir" type="button" data-action="expand">Expand All</button>
+                        <button class="btn-dir" type="button" data-action="collapse">Collapse All</button>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item1" aria-labelledby="item1-name"
+                                aria-expanded="false" aria-controls="item1-ctrld" aria-haspopup="true" data-item="1">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item1-name" class="timeline__meta">
+                                <time class="timeline__date" datetime="1970-01-01">зал 1</time><br>
+                                <strong class="timeline__title">Понедельник</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item1-ctrld" role="region" aria-labelledby="item1"
+                            aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <!-- <p class="timeline__item-p">This is the day the Unix clock began (or <time datetime="1969-12-31">December 31, 1969</time> if you live behind UTC 😉).</p> -->
+                                <ul class="timeline__item--ul">
+                                    <div class="ul--li">
+                                        <li class="timeline__item--li">16:00 - 17:30</li>
+                                        <span>(Cherleeading)</span>
+                                    </div>
+                                    <div class="ul--li">
+                                        <li class="timeline__item--li">18:00 - 20:00</li>
+                                        <span>(Бальные танцы)</span>
+                                    </div>
+                                    <div class="ul--li">
+                                        <li class="timeline__item--li">20:00 - 21:00</li>
+                                        <span>(STEP & POWER)</span>
+                                    </div>
+                                    <div class="ul--li">
+                                        <li class="timeline__item--li">21:00 - 22:00</li>
+                                        <span>(CALLANETICS)</span>
+                                    </div>
+                                </ul>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item2" aria-labelledby="item2-name"
+                                aria-expanded="false" aria-controls="item2-ctrld" aria-haspopup="true" data-item="2">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item2-name" class="timeline__meta">
+                                <time class="timeline__date" datetime="1973-10-17">October 17, 1973</time><br>
+                                <strong class="timeline__title">Digits Within ISO 8601 Format</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item2-ctrld" role="region" aria-labelledby="item2"
+                            aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">At 6:36:57 PM UTC, the date in ISO 8601 format (1973-10-17)
+                                    within the time digits (119731017) appeared for the first time.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item3" aria-labelledby="item3-name"
+                                aria-expanded="false" aria-controls="item3-ctrld" aria-haspopup="true" data-item="3">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item3-name" class="timeline__meta">
+                                <time class="timeline__date" datetime="2001-09-09">September 9, 2001</time><br>
+                                <strong class="timeline__title">1 Billion Seconds</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item3-ctrld" role="region" aria-labelledby="item3"
+                            aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">Unix time reached 1,000,000,000 seconds at 1:46:40 AM UTC.
+                                    The Danish UNIX User Group celebrated this in Copenhagen, Denmark.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item4" aria-labelledby="item4-name"
+                                aria-expanded="false" aria-controls="item4-ctrld" aria-haspopup="true" data-item="4">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item4-name" class="timeline__meta">
+                                <time class="timeline__date" datetime="2009-02-13">February 13, 2009</time><br>
+                                <strong class="timeline__title">1,234,567,890 Seconds</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item4-ctrld" role="region" aria-labelledby="item4"
+                            aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">At 11:31:30 PM UTC, the digits of the time were 1234567890.
+                                    This was celebrated worldwide, and even Google had a <a
+                                        href="https://www.google.com/logos/unix1234567890.gif" target="_blank"
+                                        rel="noopener">doodle</a> for it.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item5" aria-labelledby="item5-name"
+                                aria-expanded="false" aria-controls="item5-ctrld" aria-haspopup="true" data-item="5">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item5-name" class="timeline__meta">
+                                <time class="timeline__date" datetime="2033-05-18">May 18, 2033</time><br>
+                                <strong class="timeline__title">2 Billion Seconds</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item5-ctrld" role="region" aria-labelledby="item5"
+                            aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">Unix time will reach 2,000,000,000 seconds at 3:33:20 AM
+                                    UTC.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__item">
+                        <div class="timeline__item-header">
+                            <button class="timeline__arrow" type="button" id="item6" aria-labelledby="item6-name"
+                                aria-expanded="false" aria-controls="item6-ctrld" aria-haspopup="true" data-item="6">
+                                <svg class="timeline__arrow-icon" viewBox="0 0 24 24" width="24px" height="24px">
+                                    <use href="#arrow" />
+                                </svg>
+                            </button>
+                            <span class="timeline__dot"></span>
+                            <span id="item6-name" class="timeline__meta">
+                                <time class="timeline__date" datetime="2038-01-19">January 19, 2038</time><br>
+                                <strong class="timeline__title">Unix Epochalypse</strong>
+                            </span>
+                        </div>
+                        <div class="timeline__item-body" id="item6-ctrld" role="region" aria-labelledby="item6"
+                            aria-hidden="true">
+                            <div class="timeline__item-body-content">
+                                <p class="timeline__item-p">Also known as the year 2038 problem, clocks running on a
+                                    32-bit signed integer will flip from 3:14:08 AM UTC on this day to 8:45:52 PM UTC on
+                                    December 13, 1901. Therefore, values only from -2,147,483,648 to 2,147,483,647 for
+                                    the second are supported.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </section>
+        </main>
+    </div>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="barba.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", () => {
+            const ctl = new CollapsibleTimeline("#timeline");
+        });
+
+        class CollapsibleTimeline {
+            constructor(el) {
+                this.el = document.querySelector(el);
+
+                this.init();
+            }
+            init() {
+                this.el?.addEventListener("click", this.itemAction.bind(this));
+            }
+            animateItemAction(button, ctrld, contentHeight, shouldCollapse) {
+                const expandedClass = "timeline__item-body--expanded";
+                const animOptions = {
+                    duration: 300,
+                    easing: "cubic-bezier(0.65,0,0.35,1)"
+                };
+
+                if (shouldCollapse) {
+                    button.ariaExpanded = "false";
+                    ctrld.ariaHidden = "true";
+                    ctrld.classList.remove(expandedClass);
+                    animOptions.duration *= 2;
+                    this.animation = ctrld.animate([
+                        { height: `${contentHeight}px` },
+                        { height: `${contentHeight}px` },
+                        { height: "0px" }
+                    ], animOptions);
+                } else {
+                    button.ariaExpanded = "true";
+                    ctrld.ariaHidden = "false";
+                    ctrld.classList.add(expandedClass);
+                    this.animation = ctrld.animate([
+                        { height: "0px" },
+                        { height: `${contentHeight}px` }
+                    ], animOptions);
+                }
+            }
+            itemAction(e) {
+                const { target } = e;
+                const action = target?.getAttribute("data-action");
+                const item = target?.getAttribute("data-item");
+
+                if (action) {
+                    const targetExpanded = action === "expand" ? "false" : "true";
+                    const buttons = Array.from(this.el?.querySelectorAll(`[aria-expanded="${targetExpanded}"]`));
+                    const wasExpanded = action === "collapse";
+
+                    for (let button of buttons) {
+                        const buttonID = button.getAttribute("data-item");
+                        const ctrld = this.el?.querySelector(`#item${buttonID}-ctrld`);
+                        const contentHeight = ctrld.firstElementChild?.offsetHeight;
+
+                        this.animateItemAction(button, ctrld, contentHeight, wasExpanded);
+                    }
+
+                } else if (item) {
+                    const button = this.el?.querySelector(`[data-item="${item}"]`);
+                    const expanded = button?.getAttribute("aria-expanded");
+
+                    if (!expanded) return;
+
+                    const wasExpanded = expanded === "true";
+                    const ctrld = this.el?.querySelector(`#item${item}-ctrld`);
+                    const contentHeight = ctrld.firstElementChild?.offsetHeight;
+
+                    this.animateItemAction(button, ctrld, contentHeight, wasExpanded);
+                }
+            }
+        }
+    </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script>
+                $(document).ready(function () {
+        
+                    setTimeout(function () {
+                        $('#ctn-preloader').addClass('loaded');
+                        // Una vez haya terminado el preloader aparezca el scroll
+                        $('body').removeClass('no-scroll-y');
+        
+                        if ($('#ctn-preloader').hasClass('loaded')) {
+                            // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+                            $('#preloader').delay(1000).queue(function () {
+                                $(this).remove();
+                            });
+                        }
+                    }, 2000);
+        
+                });
+            </script>
+</body>
+
+</html>

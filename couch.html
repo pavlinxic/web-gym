@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== BOXICONS ===============-->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="preloader.css">
+    <link rel="stylesheet" href="our.css">
+    <script src="main.js" defer></script>
+    <script src="gsap.js" defer></script>
+
+
+    <title>Responsive menu ui - Bedimcode</title>
+</head>
+
+<body data-barba="wrapper">
+
+    <div class="wrapper">
+        <!--=============== NAV ===============-->
+        <nav class="nav" id="nav">
+            <div class="nav__menu container" id="nav-menu">
+                <div class="nav__shape"></div>
+
+                <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div>
+
+                <div class="nav__data">
+                    <div class="nav__mask">
+                        <!-- Change your profile picture -->
+                        <img src="" alt="" class="nav__img">
+                    </div>
+
+                    <span class="nav__greeting"></span>
+                    <h1 class="nav__name"> <br> </h1>
+                </div>
+
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link ">
+                            <i class='bx bx-home'></i> Клуб
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="price.html" class="nav__link ">
+                            <i class='bx bx-user'></i> Карты
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="direction.html" class="nav__link">
+                            <i class='bx bx-directions'></i> Расписание
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="workout.html" class="nav__link">
+                            <i class='bx bx-dumbbell'></i> Направления
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="couch.html" class="nav__link active-link">
+                            <i class='bx bx-briefcase-alt-2'></i> Тренеры
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="foto.html" class="nav__link">
+                            <i class='bx bx-bookmark'></i> Фото клуба
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="contact.html" class="nav__link">
+                            <i class='bx bx-message-square-detail'></i> Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="box"></div>
+        <!--=============== MAIN ===============-->
+        <main class="main inner" id="main">
+            <!--=============== HEADER ===============-->
+            <header class="header" id="header">
+                <nav class="header__nav container">
+                    <a href="#" class="header__logo">
+                        PRO-GYM
+                    </a>
+
+                    <!-- Toggle button -->
+                    <div class="header__toggle" id="header-toggle">
+                        <i class='bx bx-grid-alt'></i>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <div id="preloader">
+                    <div id="ctn-preloader" class="ctn-preloader">
+                        <div class="animation-preloader">
+                            <div class="spinner"></div>
+                            <div class="txt-loading">
+                                <span data-text-preloader="L" class="letters-loading">
+                                    L
+                                </span>
+
+                                <span data-text-preloader="O" class="letters-loading">
+                                    O
+                                </span>
+
+                                <span data-text-preloader="A" class="letters-loading">
+                                    A
+                                </span>
+
+                                <span data-text-preloader="D" class="letters-loading">
+                                    D
+                                </span>
+
+                                <span data-text-preloader="I" class="letters-loading">
+                                    I
+                                </span>
+
+                                <span data-text-preloader="N" class="letters-loading">
+                                    N
+                                </span>
+
+                                <span data-text-preloader="G" class="letters-loading">
+                                    G
+                                </span>
+                            </div>
+                        </div>
+                        <div class="loader-section section-left"></div>
+                        <div class="loader-section section-right"></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- When inserting your content into sections, remove the section__height class -->
+            <!--=============== HOME ===============-->
+            <section class="section section__height " data-barba="container" data-barba-namespace="couch-couch" id="home">
+                <div class="body-couch">
+                    <div class="swiper swiper-couch  mySwiper-2">
+                        <div class="swiper-wrapper">
+                            <div class="card swiper-slide">
+                                <div class="card__image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card__content">
+                                    <span class="card__title">Web Designer</span>
+                                    <span class="card__name">Vanessa Martinez</span>
+                                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                                    <button class="card__btn card__product">View More</button>
+                                </div>
+                                <div class="modal">
+                                    <div class="modal__card">
+                                        <i class="ri-close-large-line modal__close"></i>
+                                        <!-- <img src="" alt="image" class=""> -->
+                                        <div>
+                                            <h3 class="modal__name">Monitor</h3>
+                                            <ul class="modal__info">
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                            </ul>
+                                            <!-- <span class="modal__price">$299</span> -->
+                                        </div>
+                                        <div class="modal__buttons">
+                                            <button class="modal__button modal__button-ghost">79850278625</button>
+                                            <button class="modal__button ">@i_am__bog</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card__content">
+                                    <span class="card__title">Web Designer</span>
+                                    <span class="card__name">Vanessa Martinez</span>
+                                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                                    <button class="card__btn card__product">View More</button>
+                                </div>
+                                <div class="modal">
+                                    <div class="modal__card">
+                                        <i class="ri-close-large-line modal__close"></i>
+                                        <!-- <img src="" alt="image" class=""> -->
+                                        <div>
+                                            <h3 class="modal__name">Monitor</h3>
+                                            <ul class="modal__info">
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                            </ul>
+                                            <!-- <span class="modal__price">$299</span> -->
+                                        </div>
+                                        <div class="modal__buttons">
+                                            <button class="modal__button modal__button-ghost">79850278625</button>
+                                            <button class="modal__button ">@i_am__bog</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card__content">
+                                    <span class="card__title">Web Designer</span>
+                                    <span class="card__name">Vanessa Martinez</span>
+                                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                                    <button class="card__btn card__product">View More</button>
+                                </div>
+                                <div class="modal">
+                                    <div class="modal__card">
+                                        <i class="ri-close-large-line modal__close"></i>
+                                        <!-- <img src="" alt="image" class=""> -->
+                                        <div>
+                                            <h3 class="modal__name">Monitor</h3>
+                                            <ul class="modal__info">
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                            </ul>
+                                            <!-- <span class="modal__price">$299</span> -->
+                                        </div>
+                                        <div class="modal__buttons">
+                                            <button class="modal__button modal__button-ghost">79850278625</button>
+                                            <button class="modal__button ">@i_am__bog</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card__content">
+                                    <span class="card__title">Web Designer</span>
+                                    <span class="card__name">Vanessa Martinez</span>
+                                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                                    <button class="card__btn card__product">View More</button>
+                                </div>
+                                <div class="modal">
+                                    <div class="modal__card">
+                                        <i class="ri-close-large-line modal__close"></i>
+                                        <!-- <img src="" alt="image" class=""> -->
+                                        <div>
+                                            <h3 class="modal__name">Monitor</h3>
+                                            <ul class="modal__info">
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                            </ul>
+                                            <!-- <span class="modal__price">$299</span> -->
+                                        </div>
+                                        <div class="modal__buttons">
+                                            <button class="modal__button modal__button-ghost">79850278625</button>
+                                            <button class="modal__button ">@i_am__bog</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card swiper-slide">
+                                <div class="card__image">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="card__content">
+                                    <span class="card__title">Web Designer</span>
+                                    <span class="card__name">Vanessa Martinez</span>
+                                    <p class="card__text">Lorem ipsum dolor sit, amet consectetur adipisicing
+                                        elit. Sit veritatis labore provident non tempora odio est sunt, ipsum</p>
+                                    <button class="card__btn card__product">View More</button>
+                                </div>
+                                <div class="modal">
+                                    <div class="modal__card">
+                                        <i class="ri-close-large-line modal__close"></i>
+                                        <!-- <img src="" alt="image" class=""> -->
+                                        <div>
+                                            <h3 class="modal__name">Monitor</h3>
+                                            <ul class="modal__info">
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                                <li>Lorem</li>
+                                            </ul>
+                                            <!-- <span class="modal__price">$299</span> -->
+                                        </div>
+                                        <div class="modal__buttons">
+                                            <button class="modal__button modal__button-ghost">79850278625</button>
+                                            <button class="modal__button ">@i_am__bog</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+        </main>
+    </div>
+
+    <!--=============== MAIN JS ===============-->
+    <script src="https://unpkg.com/@barba/core"></script>
+    <script src="barba.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper-2", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            autoplay: {
+                delay: 6000,
+            },
+            coverflowEffect: {
+                rotate: 0,
+                stretch: 0,
+                depth: 300,
+                modifier: 1,
+                slideShadows: false,
+            },
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script>
+        /*=============== CARD POPUP JS ===============*/
+        const modal = document.querySelectorAll('.modal'),
+            cardBtn = document.querySelectorAll('.card__product'),
+            modalClose = document.querySelectorAll('.modal__close'),
+            modalCard = document.querySelectorAll('.modal__card')
+
+        let activeModal = (modalClick) => {
+            modal[modalClick].classList.add('active-modal')
+        }
+
+        /* Show modal */
+        cardBtn.forEach((cardBtn, i) => {
+            cardBtn.addEventListener('click', () => {
+                activeModal(i)
+            })
+        })
+
+        /* Hide modal */
+        modalClose.forEach((modalClose) => {
+            modalClose.addEventListener('click', () => {
+                modal.forEach((modalRemove) => {
+                    modalRemove.classList.remove('active-modal')
+                })
+            })
+        })
+
+        /* Hide modal on background click */
+        modal.forEach((modal) => {
+            modal.addEventListener('click', () => {
+                modal.classList.remove('active-modal')
+            })
+        })
+
+        /* Don't hide modal on card click (by event propagation) */
+        modalCard.forEach((modalCard) => {
+            modalCard.addEventListener('click', (e) => {
+                e.stopPropagation()
+            })
+        })
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            setTimeout(function () {
+                $('#ctn-preloader').addClass('loaded');
+                // Una vez haya terminado el preloader aparezca el scroll
+                $('body').removeClass('no-scroll-y');
+
+                if ($('#ctn-preloader').hasClass('loaded')) {
+                    // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+                    $('#preloader').delay(1000).queue(function () {
+                        $(this).remove();
+                    });
+                }
+            }, 3000);
+
+        });
+    </script>
+
+</body>
+
+</html>

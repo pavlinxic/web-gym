@@ -1,1 +1,1 @@
-# web-gym
+# gym-web
